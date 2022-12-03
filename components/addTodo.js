@@ -19,6 +19,7 @@ export default function AddTodo ({ submitHandler }) {
                 style= {styles.input}
                 placeholder='啥事要做?'
                 onChangeText={changeHandler}
+                autoFocus={true}
             />
             <Pressable style={styles.button} onPress={() => {submitHandler(text), autoClearText(text)}}> 
                 <Text style={styles.text}> {'-->'} 點擊來增加壓力 {'<--'} </Text>
